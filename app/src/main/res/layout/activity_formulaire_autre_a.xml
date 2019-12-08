@@ -1,62 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   xmlns:tools="http://schemas.android.com/tools"
-                                                   android:layout_width="match_parent"
-                                                   android:layout_height="match_parent"
-                                                   >
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutFormulaireAutreA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
     <TextView
-            android:id="@+id/textEtape"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Etape 1 sur 5"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.19" />
+        android:id="@+id/textEtapeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Etape 1 sur 5"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
 
     <ProgressBar
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="300dp"
-            android:layout_height="33dp"
-            android:id="@+id/progressBar"
-            android:progress="20"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.29"
-            app:layout_constraintHorizontal_bias="0.495"
-    />
-
-
+        android:id="@+id/progressBarEtapeA"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:progress="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
 
 
     <TextView
-            android:id="@+id/textTitreEtape"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Quelles sont vos coordonnées?"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.39" />
+        android:id="@+id/textTitreEtapeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quelles sont vos coordonnées?"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
     <TextView
-            android:text="Adresse-mail:"
-            android:layout_width="109dp"
-            android:layout_height="21dp" android:id="@+id/textViewMail"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.498"
-            app:layout_constraintHorizontal_bias="0.04"
-            android:textAlignment="center" android:textSize="16sp"/>
+        android:id="@+id/textViewMail"
+        android:layout_width="109dp"
+        android:layout_height="21dp"
+        android:text="Adresse-mail:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491" />
+
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,16 +79,20 @@
     />
 
     <TextView
-            android:text="N° téléphone:"
-            android:layout_width="109dp"
-            android:layout_height="21dp" android:id="@+id/textNumTel"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.598"
-            app:layout_constraintHorizontal_bias="0.04"
-            android:textAlignment="center" android:textSize="16sp"/>
+        android:id="@+id/textNumTel"
+        android:layout_width="109dp"
+        android:layout_height="21dp"
+        android:text="N° téléphone:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59" />
+
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,16 +109,20 @@
     />
 
     <TextView
-            android:text="Adresse:"
-            android:layout_width="109dp"
-            android:layout_height="21dp" android:id="@+id/textAdresse"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.698"
-            app:layout_constraintHorizontal_bias="0.04"
-            android:textAlignment="center" android:textSize="16sp"/>
+        android:id="@+id/textAdresse"
+        android:layout_width="109dp"
+        android:layout_height="21dp"
+        android:text="Adresse:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.684" />
+
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -126,16 +140,26 @@
     <Button
             android:text="Suivant"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/boutonSuivant" tools:layout_editor_absoluteY="610dp"
+            android:layout_height="wrap_content" android:id="@+id/boutonSuivantA" tools:layout_editor_absoluteY="610dp"
             tools:layout_editor_absoluteX="161dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.84"
+            app:layout_constraintVertical_bias="0.94"
 
     />
 
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="247dp"
+        android:layout_height="6dp"
+        android:text="Activité en Association?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
