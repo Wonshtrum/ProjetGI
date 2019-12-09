@@ -6,13 +6,13 @@
     android:id="@+id/constraintLayoutFormulaireAutreA"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    tools:context=".FormulaireAutreAActivity">
 
     <TextView
         android:id="@+id/textEtapeB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Etape 1 sur 5"
+        android:text="Etape 1 sur 10"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,9 +24,9 @@
     <ProgressBar
         android:id="@+id/progressBarEtapeA"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="300dp"
-        android:layout_height="33dp"
-        android:progress="20"
+        android:layout_width="300sp"
+        android:layout_height="33sp"
+        android:progress="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"

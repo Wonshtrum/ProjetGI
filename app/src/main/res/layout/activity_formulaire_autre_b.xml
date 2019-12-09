@@ -6,13 +6,15 @@
     android:id="@+id/constraintLayoutFormulaireAutreB"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".FormulaireAutreBActivity"
     >
 
     <TextView
         android:id="@+id/textEtapeB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Etape 1 sur 5"
+        android:text="Etape 2 sur 10"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,9 +25,9 @@
     <ProgressBar
         android:id="@+id/progressBarEtapeB"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="300dp"
-        android:layout_height="33dp"
-        android:progress="40"
+        android:layout_width="300sp"
+        android:layout_height="33sp"
+        android:progress="20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -39,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Séléctionner une date de début de période"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,8 +51,8 @@
 
     <CalendarView
         android:id="@+id/calendarViewDebut"
-        android:layout_width="330dp"
-        android:layout_height="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:minDate="01/12/2019"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
