@@ -9,12 +9,17 @@ import android.widget.EditText
 import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_formulaire.*
+import kotlinx.android.synthetic.main.activity_formulaire_autre_c.*
 
 class FormulaireAutreDActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_formulaire_autre_d)
+        boutonSuivantD.setOnClickListener {
+
+            startActivity(Intent(this@FormulaireAutreDActivity,FormulaireAutreEActivity::class.java))
+        }
         val editChamps1 = findViewById<EditText>(R.id.editTextKMMax);
         val editChamps2 = findViewById<EditText>(R.id.editTextRayonVisite);
         val editSwitch = findViewById<Switch>(R.id.switchVisite);
