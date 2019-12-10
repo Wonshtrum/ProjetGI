@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.content.Intent
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
@@ -18,7 +19,7 @@ class FormulaireAutreGActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_formulaire_autre_g)
-        val editChamps2 = findViewById<Spinner>(R.id.spinnerSecrétariat);
+        val editChamps2 = findViewById<View>(R.id.spinnerSecrétariat);
         val editSwitch = findViewById<Switch>(R.id.switchSecrétariat);
         boutonSuivantG.setOnClickListener {
 
