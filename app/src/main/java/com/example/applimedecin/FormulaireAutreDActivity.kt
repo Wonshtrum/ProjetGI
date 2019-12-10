@@ -10,6 +10,7 @@ import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_formulaire.*
 import kotlinx.android.synthetic.main.activity_formulaire_autre_c.*
+import kotlinx.android.synthetic.main.activity_formulaire_autre_d.*
 
 class FormulaireAutreDActivity : AppCompatActivity(){
 
