@@ -15,6 +15,7 @@
         <activity android:name=".FormulaireAutreDActivity"></activity>
         <activity android:name=".FormulaireActivity"></activity>
         <activity android:name=".FormulaireAdminActivity"></activity>
+        <activity android:name=".ConnexionActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
