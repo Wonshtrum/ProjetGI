@@ -3,16 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayoutFormulaireAutreA"
+    android:id="@+id/constraintLayoutFormulaireAutreF"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormulaireAutreAActivity">
+    tools:context=".FormulaireAutreFActivity">
 
     <TextView
-        android:id="@+id/textEtapeA"
+        android:id="@+id/textEtapeF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Etape 1 sur 7"
+        android:text="Etape 6 sur 7"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,11 +22,11 @@
         app:layout_constraintVertical_bias="0.19" />
 
     <ProgressBar
-        android:id="@+id/progressBarEtapeA"
+        android:id="@+id/progressBarEtapeF"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="300sp"
         android:layout_height="33sp"
-        android:progress="14"
+        android:progress="84"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -35,7 +35,20 @@
         app:layout_constraintVertical_bias="0.29" />
 
     <TextView
-        android:id="@+id/textOffreEtapeA"
+        android:id="@+id/textTitreEtapeF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informations Complémentaires"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/textOffreEtapeF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Type d'offres:"
@@ -49,35 +62,23 @@
         app:layout_constraintVertical_bias="0.469" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerPatientèle"
         android:layout_width="230dp"
         android:layout_height="35dp"
-        android:entries="@array/listeOffres"
+        android:entries="@array/listePatientèle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.663"
-        app:layout_constraintStart_toEndOf="@+id/textOffreEtapeA"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.469" />
 
-    <TextView
-        android:id="@+id/textTitreEtapeA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Informations Générales"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
 
     <TextView
-        android:id="@+id/textViewMail"
+        android:id="@+id/textViewDomaine"
         android:layout_width="109dp"
         android:layout_height="21dp"
-        android:text="Adresse-mail:"
+        android:text="Type d'activité"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="16sp"
@@ -89,24 +90,22 @@
         app:layout_constraintVertical_bias="0.551" />
 
     <EditText
-        android:id="@+id/editTextMail"
+        android:id="@+id/editTextDomaine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="exemple@mail.com"
-        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toEndOf="@+id/textViewMail"
+        app:layout_constraintHorizontal_bias="0.60"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <TextView
-        android:id="@+id/textNumTel"
+        android:id="@+id/textRémunération"
         android:layout_width="109dp"
         android:layout_height="21dp"
-        android:text="N° téléphone:"
+        android:text="Rémunération (%)"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="16sp"
@@ -118,12 +117,11 @@
         app:layout_constraintVertical_bias="0.65" />
 
     <EditText
-        android:id="@+id/editTextNumTel"
+        android:id="@+id/editTextRémunération"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:inputType="number"
         android:ems="10"
-        android:hint="0606060606"
-        android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.60"
@@ -131,58 +129,57 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.65" />
 
-    <TextView
-        android:id="@+id/textAdresse"
-        android:layout_width="109dp"
-        android:layout_height="21dp"
-        android:text="Adresse:"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.744" />
-
-    <EditText
-        android:id="@+id/editTextAdresse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="10, Rue des Docteurs"
-        android:inputType="textPostalAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.60"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
 
     <Button
-        android:id="@+id/boutonSuivantA"
+        android:id="@+id/boutonSuivantF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:enabled="false"
+        android:enabled="true"
         android:text="Suivant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.94" />
 
     <Switch
-        android:id="@+id/switchAssociation"
+        android:id="@+id/switchSecrétariat"
         android:layout_width="247dp"
         android:layout_height="6dp"
-        android:text="Activité en Association?"
+        android:text="Secrétariat?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.408"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.849" />
+        app:layout_constraintVertical_bias="0.727" />
+
+    <TextView
+        android:id="@+id/textSecrétariat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Précision:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <Spinner
+        android:id="@+id/spinnerSecrétariat"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:entries="@array/listeSecrétariat"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
