@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".FormulaireRemplacantActivityA"></activity>
+        <activity android:name=".FormulaireRemplacantActivityB"></activity>
+        <activity android:name=".FormulaireRemplacantActivityC"></activity>
+        <activity android:name=".FormulaireRemplacantActivityD"></activity>
+        <activity android:name=".FormulaireRemplacantActivityE"></activity>
         <activity android:name=".FormulaireAutreAActivity"></activity>
         <activity android:name=".FormulaireAutreBActivity"></activity>
         <activity android:name=".FormulaireAutreCActivity"></activity>
