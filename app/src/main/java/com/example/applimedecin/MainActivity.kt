@@ -11,10 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         boutonConnexion.setOnClickListener {
-            println("bonjour")
+            startActivity(Intent(this@MainActivity,ConnexionActivity::class.java))
         }
         boutonInscription.setOnClickListener {
-
             startActivity(Intent(this@MainActivity,FormulaireActivity::class.java))
         }
     }
