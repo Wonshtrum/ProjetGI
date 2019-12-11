@@ -43,15 +43,15 @@
         android:background="#FF4444"
         android:text="Déconnexion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonProfil"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonProfil"
-        android:layout_width="227dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#FF4444"
         android:text="Profil"
-        tools:layout_editor_absoluteX="88dp" />
+        app:layout_constraintEnd_toStartOf="@+id/buttonAnnoncesRetour"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
