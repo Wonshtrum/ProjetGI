@@ -32,6 +32,7 @@ class FormulaireAutreDActivity : AppCompatActivity(){
                 editChamps2.setEnabled(true)
             }else{
                 editChamps2.setEnabled(false)
+                editChamps2.setText(0);
             }
         }
 

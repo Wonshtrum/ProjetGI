@@ -2,15 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
+    android:id="@+id/constraintLayoutFormulaireAutreG"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".FormulaireAutreHActivity">
 
     <TextView
-        android:id="@+id/textEtapeG"
+        android:id="@+id/textEtapeH"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Etape 7 sur 8"
+        android:text="Etape 8 sur 8"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,56 +19,49 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ProgressBar
-        android:id="@+id/progressBarEtapeG"
+        android:id="@+id/progressBarEtapeH"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="300sp"
         android:layout_height="33sp"
         android:layout_marginTop="20dp"
-        android:progress="84"
+        android:progress="100"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEtapeG" />
+        app:layout_constraintTop_toBottomOf="@+id/textEtapeH" />
 
     <TextView
-        android:id="@+id/textTitreG"
+        android:id="@+id/textTitreEtapeH"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Pièces-jointes"
+        android:text="Précisions, Commentaires"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBarEtapeG" />
+        app:layout_constraintTop_toBottomOf="@+id/progressBarEtapeH" />
 
-    <Button
-        android:id="@+id/boutonCV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="292dp"
+        android:layout_height="205dp"
         android:layout_marginTop="30dp"
-        android:text="Ajouter CV (optionnel)"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitreG" />
+        app:layout_constraintTop_toBottomOf="@+id/textTitreEtapeH" />
 
     <Button
-        android:id="@+id/boutonCarte"
+        android:id="@+id/boutonSuivantH"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Ajouter carte médecin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boutonCV" />
+        android:enabled="true"
 
-    <Button
-        android:id="@+id/boutonSuivantG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:text="Finir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boutonCarte" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
