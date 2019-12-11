@@ -14,6 +14,9 @@ class ConnexionActivity : AppCompatActivity() {
         buttonCreerUnCompte.setOnClickListener {
             startActivity(Intent(this@ConnexionActivity, FormulaireActivity::class.java))
         }
+        buttonConnexion.setOnClickListener{
+            startActivity(Intent(this@ConnexionActivity, AnnoncesActivity::class.java))
+        }
         buttonRetour.setOnClickListener{
             startActivity(Intent(this@ConnexionActivity, MainActivity::class.java))
         }
