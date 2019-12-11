@@ -27,6 +27,7 @@
         <activity android:name=".FormulaireAutreGActivity"></activity>
         <activity android:name=".FormulaireAutreHActivity"></activity>
         <activity android:name=".FormulaireActivity"></activity>
+        <activity android:name=".AnnonceActivity"></activity>
         <activity android:name=".FormulaireAdminActivity"></activity>
         <activity android:name=".ConnexionActivity"></activity>
         <activity android:name=".MainActivity">
