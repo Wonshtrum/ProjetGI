@@ -11,7 +11,7 @@
         android:id="@+id/scrollView"
         android:layout_width="411dp"
         android:layout_height="0dp"
-        android:background="#80D5D5"
+        android:background="#FFFFFF"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,29 +28,31 @@
 
     <Button
         android:id="@+id/buttonCreate"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="143dp"
+        android:layout_height="0dp"
+        android:background="#FF4444"
         android:text="Test Connexion"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAnnoncesRetour" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonAnnoncesRetour"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="#FF4444"
         android:text="Déconnexion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonProfil"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonProfil"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_width="127dp"
+        android:layout_height="47dp"
+        android:background="#FF4444"
         android:text="Profil"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCreate" />
+        app:layout_constraintEnd_toStartOf="@+id/buttonAnnoncesRetour"
+        app:layout_constraintStart_toEndOf="@+id/buttonCreate"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

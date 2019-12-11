@@ -20,7 +20,7 @@ class AnnoncesActivity : AppCompatActivity() {
         val text_view: TextView = TextView(this)
         val params: LayoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT)
         params.setMargins(10, 10, 10, 10)
-        text_view.setBackgroundColor(Color.WHITE)
+        text_view.setBackgroundColor(Color.LTGRAY)
         text_view.layoutParams = params
         text_view.text = jsonStr
         text_view.setPadding(50, 10, 10, 100)
