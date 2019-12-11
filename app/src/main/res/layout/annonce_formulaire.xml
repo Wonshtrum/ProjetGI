@@ -47,13 +47,13 @@
         android:text="Saisissez les termes de votre annonce"
         android:textAlignment="viewStart"
         android:textColor="#5C5757"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/validerAnnonceBouton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/validerAnnonceBouton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Valider l'annonce"
