@@ -45,10 +45,10 @@
 
     <TextView
         android:id="@+id/textViewLundi"
-        android:layout_width="73dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="17dp"
-        android:text="Lundi:"
+        android:text="L"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,10 +82,10 @@
 
     <TextView
         android:id="@+id/textViewMardi"
-        android:layout_width="73dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="5dp"
-        android:text="Mardi:"
+        android:text="M"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -118,10 +118,10 @@
 
     <TextView
         android:id="@+id/textViewMercredi"
-        android:layout_width="73dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="5dp"
-        android:text="Mercredi:"
+        android:text="M"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -153,10 +153,10 @@
 
     <TextView
         android:id="@+id/textViewJeudi"
-        android:layout_width="73dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="5dp"
-        android:text="Jeudi:"
+        android:text="J"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -188,10 +188,10 @@
 
     <TextView
         android:id="@+id/textViewVendredi"
-        android:layout_width="73dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="5dp"
-        android:text="Vendredi:"
+        android:text="V"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -223,10 +223,10 @@
 
     <TextView
         android:id="@+id/textViewSamedi"
-        android:layout_width="73dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="5dp"
-        android:text="Samedi:"
+        android:text="S"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -254,15 +254,15 @@
         android:layout_width="100dp"
         android:layout_height="35dp"
         android:entries="@array/listeHoraires"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerHorairesVendredi2"
-        tools:layout_editor_absoluteX="308dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerHorairesVendredi2" />
 
     <TextView
         android:id="@+id/textViewDimanche"
-        android:layout_width="73dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="5dp"
-        android:text="Dimanche:"
+        android:text="D"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -273,46 +273,33 @@
         android:layout_width="100dp"
         android:layout_height="35dp"
         android:text="Travaillé?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.337"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.801" />
+        app:layout_constraintEnd_toStartOf="@+id/spinnerHorairesDimanche1"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSamedi" />
 
     <Spinner
         android:id="@+id/spinnerHorairesDimanche1"
         android:layout_width="100dp"
         android:layout_height="35dp"
         android:entries="@array/listeHoraires"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.659"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.801" />
+        app:layout_constraintEnd_toStartOf="@+id/spinnerHorairesDimanche2"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerHorairesSamedi1" />
 
     <Spinner
         android:id="@+id/spinnerHorairesDimanche2"
         android:layout_width="100dp"
         android:layout_height="35dp"
         android:entries="@array/listeHoraires"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.801" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerHorairesSamedi2" />
 
     <Button
         android:id="@+id/boutonSuivantE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
         android:text="Suivant"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxDimanche" />
 </androidx.constraintlayout.widget.ConstraintLayout>
