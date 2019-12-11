@@ -52,6 +52,8 @@ class FormulaireAutreDActivity : AppCompatActivity(){
             ) {
                 if (!editChamps1.getText().toString().trim().isEmpty()) {
                     boutonValider.setEnabled(true);
+                }else{
+                    boutonValider.setEnabled(false);
                 }
             }
         })
