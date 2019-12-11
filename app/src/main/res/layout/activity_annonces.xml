@@ -31,27 +31,27 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#FF4444"
-        android:text="Connexion"
+        android:text="Créer Annonce"
         app:layout_constraintEnd_toStartOf="@+id/buttonProfil"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/buttonAnnoncesRetour"
-        android:layout_width="0dp"
+        android:layout_width="122dp"
         android:layout_height="wrap_content"
         android:background="#FF4444"
         android:text="Déconnexion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/buttonProfil"
-        android:layout_width="0dp"
+        android:layout_width="116dp"
         android:layout_height="wrap_content"
         android:background="#FF4444"
         android:text="Profil"
         app:layout_constraintEnd_toStartOf="@+id/buttonAnnoncesRetour"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
