@@ -51,10 +51,12 @@ class AnnoncesActivity : AppCompatActivity() {
             startActivity(Intent(this@AnnoncesActivity,MainActivity::class.java))
         }
         buttonCreate.setOnClickListener {
-            println("----")
-            DoAsync {
-                println(URL("http://172.17.10.226:8080/test").readText())
-            }.execute()
+//            println("----")
+//            DoAsync {
+//                println(URL("http://172.17.10.226:8080/test").readText())
+//
+//            }.execute()
+            startActivity(Intent(this@AnnoncesActivity,AnnonceActivity::class.java))
         }
     }
 
