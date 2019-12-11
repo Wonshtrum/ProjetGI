@@ -32,6 +32,7 @@ class FormulaireAutreDActivity : AppCompatActivity(){
                 editChamps2.setEnabled(true)
             }else{
                 editChamps2.setEnabled(false)
+                editChamps2.setText("0");
             }
         }
 
@@ -51,6 +52,8 @@ class FormulaireAutreDActivity : AppCompatActivity(){
             ) {
                 if (!editChamps1.getText().toString().trim().isEmpty()) {
                     boutonValider.setEnabled(true);
+                }else{
+                    boutonValider.setEnabled(false);
                 }
             }
         })

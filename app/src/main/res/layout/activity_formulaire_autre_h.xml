@@ -2,16 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayoutFormulaireAutreC"
+    android:id="@+id/constraintLayoutFormulaireAutreG"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormulaireAutreCActivity">
+    tools:context=".FormulaireAutreHActivity">
 
     <TextView
-        android:id="@+id/textEtapeDRemp"
+        android:id="@+id/textEtapeH"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Etape 4 sur 5"
+        android:text="Etape 8 sur 8"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,46 +19,49 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ProgressBar
-        android:id="@+id/progressBarEtapeDRemp"
+        android:id="@+id/progressBarEtapeH"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="300sp"
         android:layout_height="33sp"
         android:layout_marginTop="20dp"
-        android:progress="80"
+        android:progress="100"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEtapeDRemp" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textEtapeH" />
 
     <TextView
-        android:id="@+id/textTitreEtapeDRemp"
+        android:id="@+id/textTitreEtapeH"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Séléctionner une date de fin de période"
+        android:text="Précisions, Commentaires"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBarEtapeDRemp" />
+        app:layout_constraintTop_toBottomOf="@+id/progressBarEtapeH" />
 
-    <CalendarView
-        android:id="@+id/calendarViewFinRemp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minDate="01/12/2019"
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="292dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitreEtapeDRemp" />
+        app:layout_constraintTop_toBottomOf="@+id/textTitreEtapeH" />
 
     <Button
-        android:id="@+id/boutonSuivantDRemp"
+        android:id="@+id/boutonSuivantH"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:text="Suivant"
+        android:layout_marginTop="30dp"
+        android:enabled="true"
+
+        android:text="Finir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/calendarViewFinRemp" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

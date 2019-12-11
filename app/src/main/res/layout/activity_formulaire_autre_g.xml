@@ -2,16 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayoutFormulaireAutreC"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FormulaireAutreCActivity">
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textEtapeDRemp"
+        android:id="@+id/textEtapeG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Etape 4 sur 5"
+        android:text="Etape 7 sur 8"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,46 +18,56 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ProgressBar
-        android:id="@+id/progressBarEtapeDRemp"
+        android:id="@+id/progressBarEtapeG"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="300sp"
         android:layout_height="33sp"
         android:layout_marginTop="20dp"
-        android:progress="80"
+        android:progress="84"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEtapeDRemp" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textEtapeG" />
 
     <TextView
-        android:id="@+id/textTitreEtapeDRemp"
+        android:id="@+id/textTitreG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Séléctionner une date de fin de période"
+        android:text="Pièces-jointes"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBarEtapeDRemp" />
-
-    <CalendarView
-        android:id="@+id/calendarViewFinRemp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minDate="01/12/2019"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitreEtapeDRemp" />
+        app:layout_constraintTop_toBottomOf="@+id/progressBarEtapeG" />
 
     <Button
-        android:id="@+id/boutonSuivantDRemp"
+        android:id="@+id/boutonCV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="30dp"
+        android:text="Ajouter CV (optionnel)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitreG" />
+
+    <Button
+        android:id="@+id/boutonCarte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Ajouter carte médecin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boutonCV" />
+
+    <Button
+        android:id="@+id/boutonSuivantG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="Suivant"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/calendarViewFinRemp" />
+        app:layout_constraintTop_toBottomOf="@+id/boutonCarte" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

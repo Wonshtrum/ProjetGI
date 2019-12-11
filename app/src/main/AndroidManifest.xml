@@ -19,6 +19,9 @@
         <activity android:name=".FormulaireAutreCActivity"></activity>
         <activity android:name=".FormulaireAutreDActivity"></activity>
         <activity android:name=".FormulaireAutreEActivity"></activity>
+        <activity android:name=".FormulaireAutreFActivity"></activity>
+        <activity android:name=".FormulaireAutreGActivity"></activity>
+        <activity android:name=".FormulaireAutreHActivity"></activity>
         <activity android:name=".FormulaireActivity"></activity>
         <activity android:name=".FormulaireAdminActivity"></activity>
         <activity android:name=".ConnexionActivity"></activity>

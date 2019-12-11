@@ -31,15 +31,18 @@ class FormulaireAutreAActivity : AppCompatActivity(){
 
             override fun onTextChanged(s: CharSequence, start: Int,
                                        before: Int, count: Int) {
-                if (editChamps1.getText().toString().trim().isEmpty()&&editChamps2.getText().toString().trim().isEmpty()&&editChamps3.getText().toString().trim().isEmpty()){
+                if (!editChamps1.getText().toString().trim().isEmpty()&&!editChamps2.getText().toString().trim().isEmpty()&&!editChamps3.getText().toString().trim().isEmpty()){
                     boutonValider.setEnabled(true);
+                }else{
+                    boutonValider.setEnabled(false);
                 }
             }
         })
 
         editChamps2.addTextChangedListener(object : TextWatcher {
 
-            override fun afterTextChanged(s: Editable) {}
+            override fun afterTextChanged(s: Editable) {
+            }
 
             override fun beforeTextChanged(s: CharSequence, start: Int,
                                            count: Int, after: Int) {
@@ -47,8 +50,10 @@ class FormulaireAutreAActivity : AppCompatActivity(){
 
             override fun onTextChanged(s: CharSequence, start: Int,
                                        before: Int, count: Int) {
-                if (editChamps1.getText().toString().trim().isEmpty()&&editChamps2.getText().toString().trim().isEmpty()&&editChamps3.getText().toString().trim().isEmpty()){
+                if (!editChamps1.getText().toString().trim().isEmpty()&&!editChamps2.getText().toString().trim().isEmpty()&&!editChamps3.getText().toString().trim().isEmpty()) {
                     boutonValider.setEnabled(true);
+                }else{
+                    boutonValider.setEnabled(false);
                 }
             }
         })
@@ -65,6 +70,8 @@ class FormulaireAutreAActivity : AppCompatActivity(){
                                        before: Int, count: Int) {
                 if (!editChamps1.getText().toString().trim().isEmpty()&&!editChamps2.getText().toString().trim().isEmpty()&&!editChamps3.getText().toString().trim().isEmpty()){
                     boutonValider.setEnabled(true);
+                }else{
+                    boutonValider.setEnabled(false);
                 }
             }
         })

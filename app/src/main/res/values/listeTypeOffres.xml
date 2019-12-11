@@ -6,6 +6,18 @@
         <item>Collaboration</item>
         <item>Installation</item>
     </string-array>
+    <string-array name="listePatientèle">
+        <item>Non Renseigné</item>
+        <item>Personnes Agées</item>
+        <item>Enfants</item>
+
+
+    </string-array>
+    <string-array name="listeSecrétariat">
+        <item>Sur Place</item>
+        <item>Distant</item>
+
+    </string-array>
     <string-array name="listeHoraires">
         <item>6:00</item>
         <item>6:30</item>
